@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark" />
+    <title>VoluMatch</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.purple.min.css" />
+</head>
+
+<body>
+    <header class="container">
+        <nav>
+            <nav aria-label="breadcrumb">
+                <ul>
+                    <li><strong><a href="../index.html">Cristioro Web</a></strong></li>
+                    <li>VoluMatch <a href="https://github.com/Cristioro/VoluMatch">GitHub</a></li>
+                </ul>
+            </nav>
+            <ul>
+                <li><a href="../index.html" class="secondary">Me</a></li>
+                <li><a href="https://github.com/Cristioro" class="secondary">GitHub</a></li>
+                <li>
+                    <details class="dropdown">
+                        <summary>Apps</summary>
+                        <ul dir="rtl">
+                            <li><a href="../RepetiScan/index.html">RepetiScan</a></li>
+                            <li><a href="../VoluMatch/index.html">Volumatch</a></li>
+                        </ul>
+                    </details>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div>
+        <hr>
+    </div>
+    <main class="container">
+        <hgroup>
+            <h1>🎧 VoluMatch — LUFS Volume Normalizer</h1>
+            <p>VoluMatch is a desktop application for Windows that automatically adjusts the volume of your MP3 songs,
+                ensuring that they all play at the same level. It uses the LUFS (Loudness Units Full Scale) standard for
+                professional audio normalization.</p>
+        </hgroup>
+
+        <div class="grid">
+            <article>
+                <header>Key Features</header>
+
+                <ul>
+                    <li>🎵 Audible volume normalization (LUFS)</li>
+                    <li>🎚️ Target level adjustment (default −16 LUFS)</li>
+                    <li>🖼️ Preserves MP3 metadata and cover art</li>
+                    <li>📋 Excel-style interface for managing files</li>
+                    <li>🖱️ Context menu for deleting songs</li>
+                    <li>🧾 Integrated console for viewing the process</li>
+                </ul>
+            </article>
+            <article>
+                <header>How to Download</header>
+                <ol>
+                    <li>Download the latest version of VoluMatch from the <a
+                            href="https://github.com/Cristioro/VoluMatch/releases/latest/download/VoluMatch.rar">Latest
+                            Release</a>.</li>
+                    <li>Extract the contents of the downloaded file and run <kbd>VoluMatch.exe</kbd>.</li>
+                </ol>
+                <hr>
+                <p>previous <a href="https://github.com/Cristioro/VoluMatch/releases">Releases</a></p>
+            </article>
+        </div>
+
+        <div class="grid">
+            <article>
+                <header>How to Use</header>
+
+                <ol>
+                    <li>Open the <kbd>VoluMatch.exe</kbd> app.</li>
+                    <li>Manage your songs (add, delete, review).</li>
+                    <li>Select the output folder.</li>
+                    <li>Choose your target volume level (LUFS).</li>
+                    <li>Click “Normalize Volume.”</li>
+                </ol>
+            </article>
+        </div>
+        <div class="grid">
+            <article>
+                <header>How Works</header>
+                <p>VoluMatch is a desktop app built with Python and Tkinter that allows users to normalize the perceived
+                    loudness (LUFS) and RMS of MP3 audio files. It provides a simple interface to load multiple songs,
+                    view their duration, RMS, and LUFS levels, and apply consistent loudness normalization using
+                    FFmpeg's loudnorm filter. The app preserves metadata, supports batch processing, and offers a
+                    progress bar and console log for feedback. It also includes customization options like setting a
+                    target LUFS and (optionally) activating dark mode for better visual comfort.</p>
+            </article>
+            <article>
+                <header>How Build</header>
+                <ol>
+                    <li>Install Python 3.11.9 or later.</li>
+                    <li>Clone the repository:
+                        <pre><code>git clone https://github.com/Cristioro/VoluMatch.git</code></pre>
+                    </li>
+                    <li>Install the required libraries using pip:
+                        <pre><code>pip install -r requirements.txt</code></pre>
+                    </li>
+                    <li>Run the <code>build.bat</code> script to create the executable:
+                        <pre><code>app/build.bat</code></pre>
+                    </li>
+                </ol>
+            </article>
+        </div>
+    </main>
+</body>
+
+</html>
