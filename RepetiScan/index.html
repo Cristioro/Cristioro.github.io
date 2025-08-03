@@ -5,8 +5,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="color-scheme" content="light dark" />
-    <title>VoluMatch</title>
+    <title>RepetiScan</title>
+    <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.purple.min.css" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v7.0.0/css/all.css">
 </head>
 
 <body>
@@ -15,7 +17,7 @@
             <nav aria-label="breadcrumb">
                 <ul>
                     <li><strong><a href="../">Cristioro Web</a></strong></li>
-                    <li>RepetiScan</li>
+                    <li>RepetiScan <a href="https://github.com/Cristioro/RepetiScan">GitHub</a></li>
                 </ul>
             </nav>
             <ul>
@@ -37,9 +39,109 @@
         <hr>
     </div>
     <main class="container">
-        <h1>RepetiScan</h1>
-        <p></p>
+        <hgroup>
+            <h1>🎵 RepetiScan - Duplicate MP3 Finder</h1>
+            <p>RepetiScan Music is a desktop Python app designed to help you find duplicate or similar MP3 songs in your
+                local music library. It compares files based on their titles and groups them when they are similar. You
+                can delete songs (safely sent to recycle bin), export results to CSV, and filter by artist name.</p>
+        </hgroup>
+
+        <div class="grid">
+            <article>
+                <header>Key Features</header>
+
+                <ul>
+                    <li>
+                        Search for:
+                        <ul>
+                            <li>Title similarity by percentage</li>
+                            <li>Keyword-based match</li>
+                        </ul>
+                    </li>
+                    <li>Exclude songs by a specific artist</li>
+                    <li>blacklist words</li>
+                    <li>Group similar songs in a single row</li>
+                    <li>Play songs with your default media player</li>
+                    <li>Delete songs (sent to recycle bin, not permanently erased!)</li>
+                    <li>Export results to <strong>.csv</strong> file</li>
+                    <li>User interface (GUI) using <strong>Tkinter</strong></li>
+                    <li>Right-click support, multi-selection, and horizontal scrolling</li>
+                    <li>Supports file names and ID3 tags (<strong>title</strong>, <strong>artist</strong>)</li>
+                </ul>
+            </article>
+            <article>
+                <header>How to Download</header>
+                <ol>
+                    <li>Download the latest version of RepetiScan from the <a
+                            href="https://github.com/Cristioro/RepetiScan/releases/latest/download/RepetiScan.music.exe">Latest
+                            Release</a>.</li>
+                    <li>Extract the contents of the downloaded file and run <kbd>RepetiScan.music.exe</kbd>.</li>
+                </ol>
+                <hr>
+                <p>previous <a href="https://github.com/Cristioro/RepetiScan/releases">Releases</a></p>
+            </article>
+        </div>
+
+        <div class="grid">
+            <article>
+                <header>How to Use</header>
+
+                <ol>
+                    <li>Open the <kbd>RepetiScan.music.exe</kbd> app.</li>
+                    <li>Select the folder containing your MP3 files.</li>
+                    <li>Adjust the blacklist <strong>(optional)</strong>.</li>
+                    <li>Search for duplicate songs (range or word match).</li>
+                    <li>double-click on a column songs.</li>
+                    <li>play the song and delete</li>
+                </ol>
+            </article>
+        </div>
+        <div class="grid">
+            <article>
+                <header>How Works</header>
+                <p>RepitiScan Music is a tool for analyzing MP3 files and detecting duplicate or very similar songs in a
+                    folder. It uses two methods: one based on the percentage of similarity between titles and another
+                    based on the number of words in common. In addition, it allows you to exclude specific words (such
+                    as “remastered” or “live”) using an editable blacklist within the application itself. It also
+                    includes features to filter songs by artist, play them with a double click, move them to the trash,
+                    or export the results to a CSV file. Ideal for organizing music libraries with inconsistent names.
+                </p>
+            </article>
+            <article>
+                <header>How Build</header>
+                <ol>
+                    <li>Install Python 3.11.9 or later.</li>
+                    <li>Clone the repository:
+                        <div class="code-container">
+                            <button class="copy-button" aria-label="Copiar código" title="Copiar código">
+                                <i class="fa-regular fa-clone"></i>
+                            </button>
+                            <pre><code>git clone https://github.com/Cristioro/RepetiScan.git
+cd RepetiScan</code></pre>
+                        </div>
+                    </li>
+                    <li>Install the required libraries using pip:
+                        <div class="code-container">
+                            <button class="copy-button" aria-label="Copiar código" title="Copiar código">
+                                <i class="fa-regular fa-clone"></i>
+                            </button>
+                            <pre><code>pip install -r requirements.txt</code></pre>
+                        </div>
+                    </li>
+                    <li>Run the <code>build.bat</code> script to create the executable:
+                        <div class="code-container">
+                            <button class="copy-button" aria-label="Copiar código" title="Copiar código">
+                                <i class="fa-regular fa-clone"></i>
+                            </button>
+                            <pre><code>start build.bat</code></pre>
+                        </div>
+                    </li>
+                </ol>
+            </article>
+        </div>
     </main>
 </body>
+
+<script src="../script.js"></script>
 
 </html>
